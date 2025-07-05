@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown, Mail, Linkedin, Sparkles, Zap, Code } from "lucide-react";
-import heroPortrait from "@/assets/hero-portrait.jpg";
+import heroPortrait from "@/assets/hero-portrait.png";
 
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
@@ -112,11 +112,11 @@ const HeroSection = () => {
         <div className="relative animate-slide-in-right">
           <div className="relative w-full max-w-md mx-auto">
             {/* Main Image */}
-            <div className="relative overflow-hidden rounded-2xl shadow-glow animate-glow-pulse">
+            <div className="relative overflow-hidden rounded-lg shadow-glow animate-glow-pulse aspect-square">
               <img
                 src={heroPortrait}
                 alt="Md Tasneemul Hassan"
-                className="w-full h-auto transition-transform duration-700 hover:scale-105"
+                className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               />
               
               {/* Overlay Effects */}
@@ -124,8 +124,8 @@ const HeroSection = () => {
             </div>
             
             {/* Decorative Elements */}
-            <div className="absolute -top-4 -right-4 w-full h-full border-2 border-accent/30 rounded-2xl -z-10 animate-float"></div>
-            <div className="absolute -bottom-4 -left-4 w-full h-full bg-gradient-primary/20 rounded-2xl -z-20 blur-sm animate-float" style={{animationDelay: '1s'}}></div>
+            <div className="absolute -top-4 -right-4 w-full h-full border-2 border-accent/30 rounded-lg -z-10 animate-float"></div>
+            <div className="absolute -bottom-4 -left-4 w-full h-full bg-gradient-primary/20 rounded-lg -z-20 blur-sm animate-float" style={{animationDelay: '1s'}}></div>
             
             {/* Floating Info Cards */}
             <div className="absolute -left-8 top-16 glass-effect p-3 rounded-lg animate-float" style={{animationDelay: '2s'}}>
