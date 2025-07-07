@@ -37,7 +37,7 @@ const PublicationsSection = () => {
             <Card key={index} className={`shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105 ${
               publication.featured ? 'ring-2 ring-primary/20 bg-gradient-to-br from-white to-primary/5' : ''
             }`}>
-              <CardContent className="p-8">
+              <CardContent className="">
                 <div className="space-y-4">
                   {publication.featured && (
                     <span className="bg-gradient-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide">
