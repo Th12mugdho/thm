@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Linkedin } from "lucide-react";
+import { Mail, Linkedin, Github } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -44,6 +44,22 @@ const ContactSection = () => {
                       <h3 className="text-lg font-semibold text-text-primary">LinkedIn</h3>
                       <a href="https://www.linkedin.com/in/tasneemulhassan12" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary-glow transition-colors">
                         linkedin.com/in/tasneemulhassan12
+                      </a>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="shadow-card hover:shadow-elegant transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-gradient-secondary rounded-full flex items-center justify-center">
+                      <Github className="w-6 h-6 text-secondary-foreground" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-text-primary">GitHub</h3>
+                      <a href="https://github.com/Th12mugdho" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary-glow transition-colors">
+                        github.com/Th12mugdho
                       </a>
                     </div>
                   </div>
