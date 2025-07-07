@@ -16,6 +16,9 @@ const Footer = () => {
             <a href="https://www.linkedin.com/in/tasneemulhassan12" target="_blank" rel="noopener noreferrer" className="text-hero-text/80 hover:text-accent transition-colors">
               LinkedIn
             </a>
+            <a href="https://github.com/Th12mugdho" target="_blank" rel="noopener noreferrer" className="text-hero-text/80 hover:text-accent transition-colors">
+              GitHub
+            </a>
             <a href="https://www.facebook.com/tasneemulhassan12" target="_blank" rel="noopener noreferrer" className="text-hero-text/80 hover:text-accent transition-colors">
               Facebook
             </a>

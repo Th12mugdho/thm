@@ -6,7 +6,19 @@ const ProjectsSection = () => {
     {
       title: "MechaHex",
       subtitle: "Interactive Robotics-Themed Web Project",
-      description: "A hexapod robot simulation project showcasing design and control logic in a browser-based experience. Features interactive controls, realistic physics simulation, and educational content about robotics principles. URL : http://bit.ly/44vddHh ",
+      description: (
+        <>
+          A hexapod robot simulation project showcasing design and control logic in a browser-based experience. Features interactive controls, realistic physics simulation, and educational content about robotics principles.{" "}
+          <a 
+            href="http://bit.ly/44vddHh" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-primary hover:text-primary/80 underline font-medium"
+          >
+            URL: http://bit.ly/44vddHh
+          </a>
+        </>
+      ),
       technologies: ["JavaScript", "WebGL", "Robotics", "Simulation"],
       link: "https://electro121.github.io/MechaHex/?fbclid=IwZXh0bgNhZW0CMTEAAR3dwWaEZ6b2sOVHxkyT0CRYG-MKMJrj7DeRAWT0ZRm6kLs2Bufr2fMBAGY_aem__j6oLC7KGjI2zmz1sen3kQ",
       featured: true
@@ -48,7 +60,7 @@ const ProjectsSection = () => {
                   <div>
                     <h3 className="text-2xl font-bold text-text-primary mb-2">{project.title}</h3>
                     <p className="text-primary font-medium mb-4">{project.subtitle}</p>
-                    <p className="text-text-secondary leading-relaxed">{project.description}</p>
+                    <div className="text-text-secondary leading-relaxed">{project.description}</div>
                   </div>
 
                   <div className="flex flex-wrap gap-2">
