@@ -10,14 +10,6 @@ const PublicationsSection = () => {
       technologies: ["Machine Learning", "Neural Networks", "Research", "Python"],
       link: "#",
       featured: true
-    },
-    {
-      title: "Electron Paramagnetic Resonance Research",
-      subtitle: "International Research Collaboration",
-      description: "Research assistant work at Allegheny College focusing on EPR spectroscopy techniques and applications in materials science and chemistry.",
-      technologies: ["EPR Spectroscopy", "Materials Science", "Research", "Data Analysis"],
-      link: "#",
-      featured: true
     }
   ];
 
