@@ -6,7 +6,7 @@ const PublicationsSection = () => {
     {
       title: "Biologically Inspired Network Design",
       subtitle: "Research Publication",
-      description: "In this research, we proposed a novel perceptron architecture—Biceptron—inspired by Hebbian learning and brain criticality theory. Unlike conventional models that rely on backpropagation, our network learns solely through forward passes, better mimicking biological neural processes. This architecture eliminates the need for gradient descent and separate training phases, allowing weights to stabilize naturally through repetition. We demonstrated its effectiveness through identity mapping and simple image classification tasks, achieving 100% accuracy in both cases. The work was presented at the 2024 IEEE International Conference on ICT (ICICT) in Dhaka.",
+      description: "In this research, we proposed a novel perceptron architecture—Biceptron—inspired by Hebbian learning and brain criticality theory. Unlike conventional models that rely on backpropagation, our network learns solely through forward passes, better mimicking biological neural processes. This architecture eliminates the need for gradient descent and separate training phases, allowing weights to stabilize naturally through repetition. We demonstrated its effectiveness through identity mapping and simple image classification tasks, achieving 100% accuracy in both cases. The work was presented at the 2024 IEEE International Conference on ICT (ICICT) in Dhaka. URL : https://ieeexplore.ieee.org/document/10839663",
       technologies: ["Machine Learning", "Neural Networks", "Research", "Python"],
       link: "#",
       featured: true
