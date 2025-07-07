@@ -24,11 +24,12 @@ const PublicationsSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
-          {publications.map((publication, index) => (
-            <Card key={index} className={`shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105 ${
-              publication.featured ? 'ring-2 ring-primary/20 bg-gradient-to-br from-white to-primary/5' : ''
-            }`}>
+        <div className="flex justify-center">
+          <div className="max-w-2xl w-full">
+            {publications.map((publication, index) => (
+              <Card key={index} className={`shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105 ${
+                publication.featured ? 'ring-2 ring-primary/20 bg-gradient-to-br from-white to-primary/5' : ''
+              }`}>
               <CardContent className="">
                 <div className="space-y-4">
                   {publication.featured && (
@@ -79,7 +80,8 @@ const PublicationsSection = () => {
                 </div>
               </CardContent>
             </Card>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
