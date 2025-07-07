@@ -1,0 +1,81 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+
+const PublicationsSection = () => {
+  const publications = [
+    {
+      title: "Biologically Inspired Network Design",
+      subtitle: "Research Publication",
+      description: "Research work focusing on training neural networks through forward pass only, inspired by biological learning mechanisms. Explores novel approaches to machine learning optimization.",
+      technologies: ["Machine Learning", "Neural Networks", "Research", "Python"],
+      link: "#",
+      featured: true
+    },
+    {
+      title: "Electron Paramagnetic Resonance Research",
+      subtitle: "International Research Collaboration",
+      description: "Research assistant work at Allegheny College focusing on EPR spectroscopy techniques and applications in materials science and chemistry.",
+      technologies: ["EPR Spectroscopy", "Materials Science", "Research", "Data Analysis"],
+      link: "#",
+      featured: true
+    }
+  ];
+
+  return (
+    <section id="publications" className="py-20 bg-background/50">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-text-primary mb-4">Research & Publications</h2>
+          <div className="w-20 h-1 bg-gradient-primary rounded-full mx-auto mb-6"></div>
+          <p className="text-xl text-text-secondary max-w-2xl mx-auto">
+            Academic research contributions and scholarly publications
+          </p>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-8">
+          {publications.map((publication, index) => (
+            <Card key={index} className={`shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105 ${
+              publication.featured ? 'ring-2 ring-primary/20 bg-gradient-to-br from-white to-primary/5' : ''
+            }`}>
+              <CardContent className="p-8">
+                <div className="space-y-4">
+                  {publication.featured && (
+                    <span className="bg-gradient-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide">
+                      Featured Research
+                    </span>
+                  )}
+                  
+                  <div>
+                    <h3 className="text-2xl font-bold text-text-primary mb-2">{publication.title}</h3>
+                    <p className="text-primary font-medium mb-4">{publication.subtitle}</p>
+                    <p className="text-text-secondary leading-relaxed">{publication.description}</p>
+                  </div>
+
+                  <div className="flex flex-wrap gap-2">
+                    {publication.technologies.map((tech, techIndex) => (
+                      <span key={techIndex} className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+
+                  {publication.link !== "#" && (
+                    <div className="pt-4">
+                      <Button variant="hero" asChild>
+                        <a href={publication.link} target="_blank" rel="noopener noreferrer">
+                          View Publication →
+                        </a>
+                      </Button>
+                    </div>
+                  )}
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default PublicationsSection;

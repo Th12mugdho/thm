@@ -12,28 +12,12 @@ const ProjectsSection = () => {
       featured: true
     },
     {
-      title: "Biologically Inspired Network Design",
-      subtitle: "Research Publication",
-      description: "Research work focusing on training neural networks through forward pass only, inspired by biological learning mechanisms. Explores novel approaches to machine learning optimization.",
-      technologies: ["Machine Learning", "Neural Networks", "Research", "Python"],
-      link: "#",
-      featured: true
-    },
-    {
-      title: "Electron Paramagnetic Resonance Research",
-      subtitle: "International Research Collaboration",
-      description: "Research assistant work at Allegheny College focusing on EPR spectroscopy techniques and applications in materials science and chemistry.",
-      technologies: ["EPR Spectroscopy", "Materials Science", "Research", "Data Analysis"],
-      link: "#",
-      featured: false
-    },
-    {
       title: "BUEEC R&D Projects",
       subtitle: "Student Club Technical Projects",
       description: "Leading multiple research and development initiatives at BRAC University Electrical and Electronic Club, focusing on practical applications of EEE principles.",
       technologies: ["Electronics", "Circuit Design", "Project Management", "Leadership"],
       link: "#",
-      featured: false
+      featured: true
     }
   ];
 
@@ -41,10 +25,10 @@ const ProjectsSection = () => {
     <section id="projects" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-text-primary mb-4">Projects & Publications</h2>
+          <h2 className="text-4xl font-bold text-text-primary mb-4">Projects</h2>
           <div className="w-20 h-1 bg-gradient-primary rounded-full mx-auto mb-6"></div>
           <p className="text-xl text-text-secondary max-w-2xl mx-auto">
-            Showcasing innovative projects, research work, and technical contributions
+            Showcasing innovative technical projects and development work
           </p>
         </div>
 
