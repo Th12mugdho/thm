@@ -14,7 +14,7 @@ const AboutSection = () => {
             
             <div className="space-y-4 text-text-secondary text-lg leading-relaxed">
               <p>
-                I'm a first-year <strong>Electrical and Electronics Engineering</strong> student at 
+                I'm a fourth-year <strong>Electrical and Electronics Engineering</strong> student at 
                 <strong> BRAC University</strong>, passionate about understanding how things work—from 
                 simple light switches to smartphones.
               </p>

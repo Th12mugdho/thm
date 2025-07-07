@@ -6,7 +6,7 @@ const ProjectsSection = () => {
     {
       title: "MechaHex",
       subtitle: "Interactive Robotics-Themed Web Project",
-      description: "A hexapod robot simulation project showcasing design and control logic in a browser-based experience. Features interactive controls, realistic physics simulation, and educational content about robotics principles.",
+      description: "A hexapod robot simulation project showcasing design and control logic in a browser-based experience. Features interactive controls, realistic physics simulation, and educational content about robotics principles. URL : http://bit.ly/44vddHh ",
       technologies: ["JavaScript", "WebGL", "Robotics", "Simulation"],
       link: "https://electro121.github.io/MechaHex/?fbclid=IwZXh0bgNhZW0CMTEAAR3dwWaEZ6b2sOVHxkyT0CRYG-MKMJrj7DeRAWT0ZRm6kLs2Bufr2fMBAGY_aem__j6oLC7KGjI2zmz1sen3kQ",
       featured: true
