@@ -48,7 +48,23 @@ const PublicationsSection = () => {
                   <div>
                     <h3 className="text-2xl font-bold text-text-primary mb-2">{publication.title}</h3>
                     <p className="text-primary font-medium mb-4">{publication.subtitle}</p>
-                    <p className="text-text-secondary leading-relaxed">{publication.description}</p>
+                    <div className="text-text-secondary leading-relaxed">
+                      {publication.description.includes('URL :') ? (
+                        <>
+                          {publication.description.split('URL :')[0]}
+                          URL : <a 
+                            href={publication.description.split('URL :')[1].trim()} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-primary hover:underline font-medium"
+                          >
+                            {publication.description.split('URL :')[1].trim()}
+                          </a>
+                        </>
+                      ) : (
+                        publication.description
+                      )}
+                    </div>
                   </div>
 
                   <div className="flex flex-wrap gap-2">
